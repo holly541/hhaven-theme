@@ -1,0 +1,95 @@
+{%- comment -%}
+  HHaven: Founding Member card plus the free Founding List.
+  The Founding List uses Shopify's customer form. Zip code and interests are saved as customer tags
+  (founding-list, zip-68022, interest-sauna-and-recovery, ...) so they can be counted in Shopify Customers.
+{%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient" id="membership">
+  <div class="hh-section hh-wrap">
+    {%- render 'hh-shead', heading: section.settings.heading, intro: section.settings.intro -%}
+    <div class="hh-mem">
+      <div class="hh-mcard hh-mcard--main">
+        <h3>{{ section.settings.member_title }}</h3>
+        <p>{{ section.settings.member_sub }}</p>
+        <div class="hh-mcard__price">{{ section.settings.price_monthly }}<small> / month</small></div>
+        <p>{{ section.settings.price_yearly_note }}</p>
+        <ul class="hh-perks">
+          {%- assign perks = section.settings.perks | newline_to_br | split: '<br />' -%}
+          {%- for perk in perks -%}{%- assign p = perk | strip -%}{%- if p != blank -%}<li>{{ p }}</li>{%- endif -%}{%- endfor -%}
+        </ul>
+        <a class="button" href="{{ section.settings.member_link | default: '#' }}">{{ section.settings.member_button }}</a>
+      </div>
+
+      <div class="hh-mcard hh-mcard--alt">
+        <h3>{{ section.settings.list_title }}</h3>
+        <p>{{ section.settings.list_sub }}</p>
+        <div class="hh-mcard__price">Free</div>
+        {%- form 'customer', class: 'hh-form', id: 'hh-founding-list' -%}
+          {%- if form.posted_successfully? -%}
+            <p class="hh-success">{{ section.settings.success }}</p>
+          {%- else -%}
+            {%- if form.errors -%}<p class="hh-success">{{ form.errors | default_errors }}</p>{%- endif -%}
+            <input type="hidden" name="contact[tags]" value="founding-list" data-hh-tags>
+            <div class="hh-two">
+              <input type="text" name="contact[first_name]" id="hh-fl-name" placeholder="First name" aria-label="First name" autocomplete="given-name">
+              <input type="text" id="hh-fl-zip" placeholder="Zip code" aria-label="Zip code" inputmode="numeric" autocomplete="postal-code" data-hh-zip>
+            </div>
+            <input type="email" name="contact[email]" id="hh-fl-email" placeholder="Email" aria-label="Email" required autocomplete="email">
+            <span>{{ section.settings.interests_label }}</span>
+            <div class="hh-checks">
+              {%- assign interests = section.settings.interests | newline_to_br | split: '<br />' -%}
+              {%- for item in interests -%}{%- assign i = item | strip -%}{%- if i != blank -%}
+                <label><input type="checkbox" value="interest-{{ i | handleize }}" data-hh-interest>{{ i }}</label>
+              {%- endif -%}{%- endfor -%}
+            </div>
+            <button class="button" type="submit">{{ section.settings.list_button }}</button>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    </div>
+    {%- if section.settings.fine_print != blank -%}<p class="hh-fine">{{ section.settings.fine_print }}</p>{%- endif -%}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var form = document.getElementById('hh-founding-list');
+    if (!form) return;
+    form.addEventListener('submit', function () {
+      var tags = ['founding-list'];
+      var zip = form.querySelector('[data-hh-zip]');
+      if (zip && zip.value.trim()) tags.push('zip-' + zip.value.trim().replace(/[^0-9]/g, '').slice(0, 5));
+      form.querySelectorAll('[data-hh-interest]:checked').forEach(function (c) { tags.push(c.value); });
+      form.querySelector('[data-hh-tags]').value = tags.join(', ');
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "HHaven membership",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-2" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Be part of it from the start." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "The people who join now are the community the club is built for. Every member helps show what Nebraska wants built here. I'd love for you to be one of them." },
+    { "type": "header", "content": "Founding Member" },
+    { "type": "text", "id": "member_title", "label": "Title", "default": "Founding Member" },
+    { "type": "text", "id": "member_sub", "label": "Subtitle", "default": "For people who want to be in the room every month." },
+    { "type": "text", "id": "price_monthly", "label": "Monthly price", "default": "$45" },
+    { "type": "text", "id": "price_yearly_note", "label": "Yearly note", "default": "or $450 a year, two months free" },
+    { "type": "textarea", "id": "perks", "label": "Perks, one per line", "default": "One gathering every month, included\nA members-only gathering each season\n20% off extra gatherings, cacao, and gifts\nFirst access to every ticket release\nFirst access to join HHaven Wellness & Social Club when it opens" },
+    { "type": "text", "id": "member_button", "label": "Button label", "default": "Become a founding member" },
+    { "type": "url", "id": "member_link", "label": "Button link", "info": "Link to the membership product from your membership app." },
+    { "type": "header", "content": "Founding List" },
+    { "type": "text", "id": "list_title", "label": "Title", "default": "The Founding List" },
+    { "type": "text", "id": "list_sub", "label": "Subtitle", "default": "Not ready to join? Follow the build and hear about it first." },
+    { "type": "text", "id": "interests_label", "label": "Interests question", "default": "What would bring you to the club?" },
+    { "type": "textarea", "id": "interests", "label": "Interests, one per line", "default": "Providers and practitioners\nMovement studio\nSauna and recovery\nThe café\nGreenhouse and farm\nOvernight stays\nCacao gatherings\nA place to meet people" },
+    { "type": "text", "id": "list_button", "label": "Button label", "default": "Join the founding list" },
+    { "type": "text", "id": "success", "label": "Thank-you message", "default": "Thank you. You're on the founding list, and I'll write when there's news." },
+    { "type": "textarea", "id": "fine_print", "label": "Fine print", "default": "Membership renews until you cancel, and you can cancel online anytime. Founding members get first access to join HHaven Wellness & Social Club when it opens. Membership doesn't reserve a spot or lock a future price." }
+  ],
+  "presets": [ { "name": "HHaven membership" } ]
+}
+{% endschema %}

@@ -1,0 +1,7 @@
+{%- comment -%} Editorial section head: thin rule, headline left, intro right. Accepts: heading, intro {%- endcomment -%}
+{%- if heading != blank or intro != blank -%}
+  <div class="hh-shead">
+    <h2>{{ heading }}</h2>
+    {%- if intro != blank -%}<p>{{ intro }}</p>{%- endif -%}
+  </div>
+{%- endif -%}

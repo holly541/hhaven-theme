@@ -1,0 +1,9 @@
+{%- comment -%}
+  Renders a merchant-picked image, or a bundled HHaven photo as a fallback.
+  Accepts: image (image object), fallback (asset file name), alt (string), position (CSS object-position)
+{%- endcomment -%}
+{%- if image != blank -%}
+  {{ image | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1600', sizes: '(min-width: 990px) 50vw, 100vw', alt: alt, style: position }}
+{%- elsif fallback != blank -%}
+  <img src="{{ fallback | asset_url }}" alt="{{ alt | escape }}" loading="lazy" width="1600" height="1200" style="{{ position }}">
+{%- endif -%}

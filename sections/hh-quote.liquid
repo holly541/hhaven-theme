@@ -1,0 +1,23 @@
+{%- comment -%} HHaven: large pull quote in Holly's words. {%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="hh-section hh-wrap hh-quote">
+    <blockquote>{{ section.settings.quote }}</blockquote>
+    {%- if section.settings.cite != blank -%}<cite>{{ section.settings.cite }}</cite>{%- endif -%}
+    {%- if section.settings.context != blank -%}<p>{{ section.settings.context }}</p>{%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "HHaven quote",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-3" },
+    { "type": "textarea", "id": "quote", "label": "Quote", "default": "\"It was simply sitting together, journaling, and listening to one another. The magic that comes from that community is life changing.\"" },
+    { "type": "text", "id": "cite", "label": "Name", "default": "Holly" },
+    { "type": "text", "id": "context", "label": "Context line", "default": "On the women's circle in Portugal that started all of this." }
+  ],
+  "presets": [ { "name": "HHaven quote" } ]
+}
+{% endschema %}

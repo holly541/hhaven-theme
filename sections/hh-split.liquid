@@ -1,0 +1,70 @@
+{%- comment -%} HHaven: photo beside text, with optional logo mark, buttons, and Holly's signature. {%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="hh-section hh-wrap">
+    <div class="hh-split{% if section.settings.layout == 'image_right' %} hh-split--reverse{% endif %}">
+      <div class="hh-split__media">
+        {%- render 'hh-image', image: section.settings.image, fallback: section.settings.fallback_image, alt: section.settings.image_alt, position: section.settings.image_position -%}
+      </div>
+      <div class="hh-split__copy">
+        {%- if section.settings.logo_mark != 'none' -%}
+          <img class="hh-logo-mark" src="{{ section.settings.logo_mark | asset_url }}" alt="" width="260" height="96">
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}<h2>{{ section.settings.heading }}</h2>{%- endif -%}
+        <div class="rte">{{ section.settings.text }}</div>
+        {%- if section.settings.show_signature -%}
+          <div class="hh-sig"><img src="{{ section.settings.signature_mark | asset_url }}" alt="" width="60" height="72">Holly Baynes</div>
+        {%- endif -%}
+        {%- if section.settings.button_label != blank or section.settings.button_label_2 != blank -%}
+          <div class="hh-btns">
+            {%- if section.settings.button_label != blank -%}
+              <a class="button" href="{{ section.settings.button_link | default: '#' }}">{{ section.settings.button_label }}</a>
+            {%- endif -%}
+            {%- if section.settings.button_label_2 != blank -%}
+              <a class="button button--secondary" href="{{ section.settings.button_link_2 | default: '#' }}">{{ section.settings.button_label_2 }}</a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "HHaven photo and text",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "select", "id": "layout", "label": "Photo side", "default": "image_left",
+      "options": [ { "value": "image_left", "label": "Left" }, { "value": "image_right", "label": "Right" } ] },
+    { "type": "image_picker", "id": "image", "label": "Photo" },
+    { "type": "text", "id": "fallback_image", "label": "Bundled photo file", "info": "Used until you pick a photo above.", "default": "hh-photo-holly-portrait.jpg" },
+    { "type": "text", "id": "image_alt", "label": "Photo description" },
+    { "type": "text", "id": "image_position", "label": "Photo focus (CSS)", "default": "object-position: center" },
+    { "type": "select", "id": "logo_mark", "label": "Logo above heading", "default": "none",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "hh-logo-club-cream.svg", "label": "Club, cream" },
+        { "value": "hh-logo-club-cacao.svg", "label": "Club, cacao" },
+        { "value": "hh-logo-events-cacao.svg", "label": "Events, cacao" },
+        { "value": "hh-logo-heart-sand.svg", "label": "Heart, sand" },
+        { "value": "hh-logo-heart-cacao.svg", "label": "Heart, cacao" }
+      ] },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Twenty years in medicine. One hour in a circle in Portugal." },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Tell your story here.</p>" },
+    { "type": "checkbox", "id": "show_signature", "label": "Show Holly's signature", "default": false },
+    { "type": "select", "id": "signature_mark", "label": "Mark beside signature", "default": "hh-logo-arch-cacao.svg",
+      "options": [
+        { "value": "hh-logo-arch-cacao.svg", "label": "Arch, cacao" },
+        { "value": "hh-logo-oval-sand.svg", "label": "Oval, sand" },
+        { "value": "hh-logo-oval-cacao.svg", "label": "Oval, cacao" }
+      ] },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "text", "id": "button_label_2", "label": "Second button label" },
+    { "type": "url", "id": "button_link_2", "label": "Second button link" }
+  ],
+  "presets": [ { "name": "HHaven photo and text" } ]
+}
+{% endschema %}

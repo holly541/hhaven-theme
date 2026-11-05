@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "hh_split_0": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-holly-portrait.jpg",
+        "image_alt": "Holly Baynes",
+        "image_position": "object-position: center 25%",
+        "logo_mark": "none",
+        "heading": "Twenty years in medicine. One hour in a circle in Portugal.",
+        "text": "<p>I'm Holly Baynes, a pediatric nurse practitioner in Omaha, a cacao facilitator, and the founder of HHaven.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "hh_text_1": {
+      "type": "hh-text",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "show_signature": true,
+        "text": "<p>I've spent twenty years in medicine, fifteen of them in heart surgery. I still practice, and I love the work.</p><p>A few years ago, I sat in a women's circle at a retreat in Portugal. We each drew a guidance card, journaled about it, and then talked. I remember wondering what sitting in a circle was going to do. It was relaxing, and it was nice to be with other people. I wasn't expecting much more than that.</p><p>I didn't know what my card meant, so I just started writing. Afterward I read the longer description in the book that goes with the cards. It brought me right back to a time in my life I had already written about. It was a full circle moment, and I couldn't believe it was coming up.</p><p>For a while I'd been drawn to holistic practices, and I worried people thought I was weird. I kept asking, God, am I on the right track? That hour felt like an answer. Then we opened the circle up to talk. I heard so much of my own story in what the other women shared.</p><p>All of that came from one hour of sitting together, journaling, and listening to one another. Cacao became part of it on that same trip, when a woman handed me a cup.</p><p>So I learned the plant the way I learned medicine. Where it grows, what's in it, how it's made, and how much is enough. I found farmers in Peru and Brazil I trust. Now I hold circles here in Nebraska, so other people can have that hour too.</p>"
+      }
+    },
+    "hh_quote_2": {
+      "type": "hh-quote",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "quote": "\"It was simply sitting together, journaling, and listening to one another. The magic that comes from that community is life changing.\"",
+        "cite": "Holly",
+        "context": "On the women's circle in Portugal that started all of this."
+      }
+    },
+    "hh_text_3": {
+      "type": "hh-text",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": "What the hardest days taught me",
+        "text": "<p>I went into medicine because I wanted to help people, and I've always loved working with kids. They still have a kind of whimsy and magic in how they think. I loved the science too. If I do this, it will help you, and it's proven.</p><p>Then I started working in the ICU. I saw children we couldn't make better, and circumstances that were heartbreaking. I still do. I was following every rule. We had done the research. It was supposed to work. In my twenties, it was hard to accept that I couldn't fix it.</p><p>When I had children of my own, I saw them in my patients. I started asking what I was really there to give. Medicine and surgery matter. So does what one person gives another in the room.</p><p>Some of the memories I hold closest are of families who lost a child. Even in that much pain, they found grace. They thanked us for knowing their child, and they made us part of their story. It still astonishes me.</p><p>Medicine also taught me to trust a feeling. Good providers know it: something is wrong before any test shows it. Becoming a mother made that feeling stronger. It isn't data, and I started wondering what else is like it.</p><p>That question led me to ancient practices. They gave me a sense of awe and wholeness I hadn't found in numbers. I'm grateful for every test, technology, and surgery we have. I don't think we have to choose. I believe we need both to be well.</p>"
+      }
+    },
+    "hh_columns_4": {
+      "type": "hh-columns",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "heading": "What I hold to",
+        "intro": "The standards behind every block and every gathering.",
+        "numbered": false,
+        "columns": "3",
+        "statement": ""
+      },
+      "blocks": {
+        "c0": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Say less, and be right",
+            "text": "I teach what's in the cup, not what it will do for you. If I can't stand behind a claim, it doesn't go on the label."
+          }
+        },
+        "c1": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Listen first",
+            "text": "The most important thing I give anyone is my attention. That started at the bedside and it carries into every circle."
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "We need both",
+            "text": "Modern medicine and ancient practices each give us something. I bring them together."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2"
+      ]
+    },
+    "hh_split_5": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-cosmos.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "What's next",
+        "text": "<p>I'm building HHaven Wellness & Social Club, a place to gather here in Nebraska. You can follow along, or join as a founding member.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "About the club",
+        "button_link": "/pages/the-club"
+      }
+    },
+    "newsletter_6": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Haven Living, every Sunday.",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>What I'm learning about cacao, the next gathering, and the newest chapter of building the club. Your first block is 10% off when you join.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ]
+    }
+  },
+  "order": [
+    "hh_split_0",
+    "hh_text_1",
+    "hh_quote_2",
+    "hh_text_3",
+    "hh_columns_4",
+    "hh_split_5",
+    "newsletter_6"
+  ]
+}

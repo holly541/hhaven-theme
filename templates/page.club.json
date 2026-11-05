@@ -1,0 +1,204 @@
+{
+  "sections": {
+    "hh_split_0": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-living-room.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "hh-logo-club-cream.svg",
+        "heading": "A place to gather, built here in Nebraska.",
+        "text": "<p>A place where modern medicine and ancient practices meet, with a movement studio, a café, a greenhouse, and room to gather. You come because you want to be there. I'm building it in public, one chapter at a time.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Become a founding member",
+        "button_link": "#membership"
+      }
+    },
+    "hh_columns_1": {
+      "type": "hh-columns",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": "What I'm building",
+        "intro": "A place you come because you want to be there, not because something is wrong. Providers who listen, a space that feels special, and people to share it with.",
+        "numbered": false,
+        "columns": "3",
+        "statement": "Maybe you feel fine and want to feel better. Maybe it's a special day. Maybe something feels off. Either way, you're not broken. Sometimes things need adjusting, and we're here to listen."
+      },
+      "blocks": {
+        "c0": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Providers who listen",
+            "text": "Modern medicine and ancient practices under one roof. A primary or functional medicine provider, an herbalist, a reiki practitioner, each there to listen and support you."
+          }
+        },
+        "c1": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "A movement studio",
+            "text": "A beautiful room you'll want to come back to."
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Recovery",
+            "text": "A sauna and quiet spaces where you get to rest for a while."
+          }
+        },
+        "c3": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "The café",
+            "text": "Somewhere to sit with friends where you don't have to put on a show. You just show up as who you are."
+          }
+        },
+        "c4": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Greenhouse and farm",
+            "text": "Learn about plants and where food comes from. Pick fruits and vegetables, and taste them in what we serve."
+          }
+        },
+        "c5": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Stay the night",
+            "text": "When you want to settle in longer, there will be room to stay."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ]
+    },
+    "hh_quote_2": {
+      "type": "hh-quote",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "quote": "\"It was simply sitting together, journaling, and listening to one another. The magic that comes from that community is life changing.\"",
+        "cite": "Holly",
+        "context": "This is the feeling I want the club to hold, every day of the week."
+      }
+    },
+    "hh_membership_3": {
+      "type": "hh-membership",
+      "settings": {
+        "color_scheme": "scheme-2"
+      }
+    },
+    "hh_columns_4": {
+      "type": "hh-columns",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "Building it out loud",
+        "intro": "Every step, the wins and the setbacks. Haven Living subscribers hear first.",
+        "numbered": false,
+        "columns": "3",
+        "statement": ""
+      },
+      "blocks": {
+        "c0": {
+          "type": "column",
+          "settings": {
+            "big": "Chapter 1",
+            "title": "One hour in a circle in Portugal",
+            "text": "Where the idea for the club began, and what I want it to feel like when you walk in."
+          }
+        },
+        "c1": {
+          "type": "column",
+          "settings": {
+            "big": "Chapter 2",
+            "title": "Looking for land",
+            "text": "Walking properties around Omaha and what I'm learning about what matters."
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "big": "Next",
+            "title": "Coming soon",
+            "text": "Follow along on Instagram or in Haven Living."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2"
+      ]
+    },
+    "hh_split_5": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-cosmos-sky.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Know someone with land?",
+        "text": "<p>I'm looking for acreage near Omaha. If you own land, or know someone who does, I'd love to talk. The same goes for anyone who'd like to partner on this.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Get in touch",
+        "button_link": "/pages/contact"
+      }
+    },
+    "newsletter_6": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Haven Living, every Sunday.",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>What I'm learning about cacao, the next gathering, and the newest chapter of building the club. Your first block is 10% off when you join.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ]
+    }
+  },
+  "order": [
+    "hh_split_0",
+    "hh_columns_1",
+    "hh_quote_2",
+    "hh_membership_3",
+    "hh_columns_4",
+    "hh_split_5",
+    "newsletter_6"
+  ]
+}

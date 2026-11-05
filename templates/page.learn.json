@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "hh_split_0": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-hand-dust.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Learn the plant.",
+        "text": "<p>I teach what's in your cup and where it came from. Not what it will do for you. Here's what I'd tell a friend who's curious.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "hh_grades_1": {
+      "type": "hh-grades",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "heading": "There are four grades of chocolate. Most people only know one.",
+        "intro": "The front of the bag rarely tells you which one you bought. Here they are, from most processed to least."
+      },
+      "blocks": {
+        "g0": {
+          "type": "card",
+          "settings": {
+            "number": "01",
+            "title": "Cocoa powder",
+            "text": "Baker's chocolate. The most processed, often with added sugar.",
+            "highlight": false
+          }
+        },
+        "g1": {
+          "type": "card",
+          "settings": {
+            "number": "02",
+            "title": "Cacao powder and nibs",
+            "text": "No additives, but still heavily manufactured.",
+            "highlight": false
+          }
+        },
+        "g2": {
+          "type": "card",
+          "settings": {
+            "number": "03",
+            "title": "Organic cacao",
+            "text": "Grown without chemicals, but mass-produced and blended.",
+            "highlight": false
+          }
+        },
+        "g3": {
+          "type": "card",
+          "settings": {
+            "number": "04",
+            "title": "Ceremonial grade",
+            "text": "Single origin, never hybridized, made by hand. The rawest form of chocolate.",
+            "highlight": true
+          }
+        }
+      },
+      "block_order": [
+        "g0",
+        "g1",
+        "g2",
+        "g3"
+      ]
+    },
+    "hh_split_2": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-marble-jar.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Theobromine, and a little caffeine.",
+        "text": "<p>Cacao's main natural compound is theobromine. It's a cousin of caffeine, from the same family of plant compounds. Cacao also has a small amount of caffeine, much less than a cup of coffee.</p><p>That's one reason people often say a cup of cacao feels different from coffee. I'd rather teach you what the compounds are than promise what they'll do. Everyone's body is a little different, which is why I always say start small.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "hh_columns_3": {
+      "type": "hh-columns",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "heading": "How to make your cup",
+        "intro": "It takes about five minutes. A small whisk or frother helps.",
+        "numbered": true,
+        "columns": "4",
+        "statement": ""
+      },
+      "blocks": {
+        "c0": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "Shave or chop your cacao into small pieces."
+          }
+        },
+        "c1": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "Heat 6 to 8 oz of water or milk until steaming. Don't let it boil."
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "Whisk or blend until smooth and a little frothy."
+          }
+        },
+        "c3": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "Add cinnamon, vanilla, or a little honey if you like."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ]
+    },
+    "hh_columns_4": {
+      "type": "hh-columns",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": "Find your amount",
+        "intro": "More isn't better. Most people need less than the internet says.",
+        "numbered": false,
+        "columns": "3",
+        "statement": ""
+      },
+      "blocks": {
+        "c0": {
+          "type": "column",
+          "settings": {
+            "big": "½ oz",
+            "title": "A light sip",
+            "text": "A good first cup, and a good place to stay if you're sensitive to caffeine."
+          }
+        },
+        "c1": {
+          "type": "column",
+          "settings": {
+            "big": "1 oz",
+            "title": "A daily cup",
+            "text": "Where most people settle for a morning or afternoon cup."
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "big": "1½ oz",
+            "title": "A gathering cup",
+            "text": "What I serve at guided gatherings. Check with your provider first if you have a heart condition or take medications."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2"
+      ]
+    },
+    "hh_split_5": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-jar-garden.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Storing your block",
+        "text": "<p>Keep it sealed and airtight in a cool, dry place. Heat is the one thing that hurts it. A sealed block keeps one to two years.</p><p>If you see a white or dusty film, that's bloom. The cacao's own fat rose to the surface. It's not mold, and it's still good.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "newsletter_6": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Haven Living, every Sunday.",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>What I'm learning about cacao, the next gathering, and the newest chapter of building the club. Your first block is 10% off when you join.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ]
+    }
+  },
+  "order": [
+    "hh_split_0",
+    "hh_grades_1",
+    "hh_split_2",
+    "hh_columns_3",
+    "hh_columns_4",
+    "hh_split_5",
+    "newsletter_6"
+  ]
+}

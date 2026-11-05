@@ -1,0 +1,61 @@
+{%- comment -%} HHaven: gatherings list. Each event is a block, so Holly can add, edit, or remove events in the editor. {%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="hh-section hh-wrap">
+    {%- if section.settings.logo_mark != 'none' -%}
+      <img class="hh-logo-mark" src="{{ section.settings.logo_mark | asset_url }}" alt="HHaven Events" width="260" height="96" style="height:88px;width:auto;margin-bottom:2.8rem">
+    {%- endif -%}
+    {%- render 'hh-shead', heading: section.settings.heading, intro: section.settings.intro -%}
+    {%- if section.settings.show_image -%}
+      <div class="hh-wide-media">
+        {%- render 'hh-image', image: section.settings.image, fallback: section.settings.fallback_image, alt: 'A cacao circle in a garden conservatory', position: 'object-position: center 65%' -%}
+      </div>
+    {%- endif -%}
+    <div class="hh-events">
+      {%- for block in section.blocks -%}
+        <div class="hh-event" {{ block.shopify_attributes }}>
+          <div class="hh-event__date">{{ block.settings.date }}<small>{{ block.settings.day }}</small></div>
+          <div>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.details }}{% if block.settings.member_note != blank %} · <span class="hh-event__mem">{{ block.settings.member_note }}</span>{% endif %}</p>
+          </div>
+          <a class="button" href="{{ block.settings.link | default: '#' }}">{{ block.settings.button_label }}</a>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.button_label != blank -%}
+      <div class="hh-btns"><a class="button button--secondary" href="{{ section.settings.button_link | default: '#' }}">{{ section.settings.button_label }}</a></div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "HHaven gatherings",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-2" },
+    { "type": "select", "id": "logo_mark", "label": "Logo above heading", "default": "hh-logo-events-cacao.svg",
+      "options": [ { "value": "none", "label": "None" }, { "value": "hh-logo-events-cacao.svg", "label": "Events, cacao" } ] },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "I'd love to have you in the room with us." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "Cacao circles in yoga studios and event spaces around Omaha. Mats are provided, and your first cup is waiting for you." },
+    { "type": "checkbox", "id": "show_image", "label": "Show wide photo", "default": true },
+    { "type": "image_picker", "id": "image", "label": "Photo" },
+    { "type": "text", "id": "fallback_image", "label": "Bundled photo file", "default": "hh-photo-atrium.jpg" },
+    { "type": "text", "id": "button_label", "label": "Button under list" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "blocks": [
+    { "type": "event", "name": "Gathering", "settings": [
+      { "type": "text", "id": "date", "label": "Date", "default": "Dec 13" },
+      { "type": "text", "id": "day", "label": "Day", "default": "Sunday" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Winter Gathering" },
+      { "type": "text", "id": "details", "label": "Time, place, price", "default": "10:00 to 11:30 AM · Omaha · $35, cup included" },
+      { "type": "text", "id": "member_note", "label": "Member note", "default": "Included for members" },
+      { "type": "text", "id": "button_label", "label": "Button label", "default": "Save my spot" },
+      { "type": "url", "id": "link", "label": "Ticket link", "info": "Link to the event's ticket product." }
+    ] }
+  ],
+  "presets": [ { "name": "HHaven gatherings", "blocks": [ { "type": "event" } ] } ]
+}
+{% endschema %}

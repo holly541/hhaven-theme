@@ -1,0 +1,32 @@
+{%- comment -%} HHaven: four-point trust strip. {%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="hh-wrap hh-trust">
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }}><b>{{ block.settings.title }}</b><span>{{ block.settings.text }}</span></div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "HHaven trust strip",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-3" }
+  ],
+  "blocks": [
+    { "type": "point", "name": "Point", "settings": [
+      { "type": "text", "id": "title", "label": "Title", "default": "Single origin" },
+      { "type": "text", "id": "text", "label": "Text", "default": "Peru and Brazil" }
+    ] }
+  ],
+  "presets": [ { "name": "HHaven trust strip", "blocks": [
+    { "type": "point", "settings": { "title": "Single origin", "text": "Peru and Brazil" } },
+    { "type": "point", "settings": { "title": "Made by hand", "text": "Picked, fermented, roasted, ground" } },
+    { "type": "point", "settings": { "title": "Nothing added", "text": "100% cacao" } },
+    { "type": "point", "settings": { "title": "Lab tested", "text": "Results posted per batch" } }
+  ] } ]
+}
+{% endschema %}

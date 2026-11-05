@@ -1,0 +1,278 @@
+{
+  "sections": {
+    "hh_split_0": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-hero-couch.jpg",
+        "image_alt": "Holly sipping cacao on a leather couch",
+        "image_position": "object-position: 45% center",
+        "logo_mark": "none",
+        "heading": "Cacao worth slowing down for.",
+        "text": "<p>Single-origin cacao from small farms in Peru and Brazil, picked and ground into paste by the families who grow it. Chosen and shipped from Omaha by a nurse practitioner who found it in a cup in Portugal.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Shop cacao",
+        "button_link": "/collections/all",
+        "button_label_2": "What is ceremonial cacao?",
+        "button_link_2": "/pages/learn"
+      }
+    },
+    "hh_trust_1": {
+      "type": "hh-trust",
+      "settings": {
+        "color_scheme": "scheme-3"
+      },
+      "blocks": {
+        "t0": {
+          "type": "point",
+          "settings": {
+            "title": "Single origin",
+            "text": "Peru and Brazil"
+          }
+        },
+        "t1": {
+          "type": "point",
+          "settings": {
+            "title": "Made by hand",
+            "text": "Picked, fermented, roasted, ground"
+          }
+        },
+        "t2": {
+          "type": "point",
+          "settings": {
+            "title": "Nothing added",
+            "text": "100% cacao"
+          }
+        },
+        "t3": {
+          "type": "point",
+          "settings": {
+            "title": "Lab tested",
+            "text": "Results posted per batch"
+          }
+        }
+      },
+      "block_order": [
+        "t0",
+        "t1",
+        "t2",
+        "t3"
+      ]
+    },
+    "featured_collection_2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Start with one block.",
+        "heading_size": "h1",
+        "description": "<p>Each origin tastes a little different, the way wine does. If you can't decide, the tasting set has both.</p>",
+        "show_description": true,
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "show_view_all": true
+      }
+    },
+    "hh_grades_3": {
+      "type": "hh-grades",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "heading": "There are four grades of chocolate. Most people only know one.",
+        "intro": "The front of the bag rarely tells you which one you bought. Here they are, from most processed to least.",
+        "button_label": "Learn more about cacao",
+        "button_link": "/pages/learn"
+      },
+      "blocks": {
+        "g0": {
+          "type": "card",
+          "settings": {
+            "number": "01",
+            "title": "Cocoa powder",
+            "text": "Baker's chocolate. The most processed, often with added sugar.",
+            "highlight": false
+          }
+        },
+        "g1": {
+          "type": "card",
+          "settings": {
+            "number": "02",
+            "title": "Cacao powder and nibs",
+            "text": "No additives, but still heavily manufactured.",
+            "highlight": false
+          }
+        },
+        "g2": {
+          "type": "card",
+          "settings": {
+            "number": "03",
+            "title": "Organic cacao",
+            "text": "Grown without chemicals, but mass-produced and blended.",
+            "highlight": false
+          }
+        },
+        "g3": {
+          "type": "card",
+          "settings": {
+            "number": "04",
+            "title": "Ceremonial grade",
+            "text": "Single origin, never hybridized, made by hand. The rawest form of chocolate.",
+            "highlight": true
+          }
+        }
+      },
+      "block_order": [
+        "g0",
+        "g1",
+        "g2",
+        "g3"
+      ]
+    },
+    "hh_split_4": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_left",
+        "fallback_image": "hh-photo-holly-portrait.jpg",
+        "image_alt": "Holly Baynes",
+        "image_position": "object-position: center 25%",
+        "logo_mark": "none",
+        "heading": "Twenty years in medicine. One hour in a circle in Portugal.",
+        "text": "<p>I'm a nurse practitioner. I've spent twenty years in medicine, fifteen of them in heart surgery, and I still love the work.</p><p>At a women's retreat in Portugal, I sat in a circle, drew a guidance card, and started journaling. I didn't expect much. That one hour of sitting together and listening to one another turned into a full circle moment I still think about. Now I hold circles here in Nebraska, with a cup of cacao in everyone's hands.</p>",
+        "show_signature": true,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Read my story",
+        "button_link": "/pages/our-story"
+      }
+    },
+    "hh_events_5": {
+      "type": "hh-events",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "logo_mark": "hh-logo-events-cacao.svg",
+        "heading": "I'd love to have you in the room with us.",
+        "intro": "Cacao circles in yoga studios and event spaces around Omaha. Mats are provided, and your first cup is waiting for you.",
+        "show_image": true,
+        "fallback_image": "hh-photo-atrium.jpg",
+        "button_label": "All gatherings",
+        "button_link": "/pages/gatherings"
+      },
+      "blocks": {
+        "e0": {
+          "type": "event",
+          "settings": {
+            "date": "Nov 22",
+            "day": "Sunday",
+            "title": "Late Fall Cacao Circle",
+            "details": "6:00 to 7:30 PM · [Studio name], Omaha · $35, cup included",
+            "member_note": "Included for members",
+            "button_label": "Save my spot",
+            "link": "/collections/gatherings"
+          }
+        },
+        "e1": {
+          "type": "event",
+          "settings": {
+            "date": "Dec 13",
+            "day": "Sunday",
+            "title": "Winter Gathering",
+            "details": "10:00 to 11:30 AM · [Event space], Omaha · $35",
+            "member_note": "Included for members",
+            "button_label": "Save my spot",
+            "link": "/collections/gatherings"
+          }
+        },
+        "e2": {
+          "type": "event",
+          "settings": {
+            "date": "Jan 10",
+            "day": "Sunday",
+            "title": "New Year Cacao Circle",
+            "details": "6:00 to 7:30 PM · [Event space], Lincoln · $35",
+            "member_note": "Included for members",
+            "button_label": "Save my spot",
+            "link": "/collections/gatherings"
+          }
+        }
+      },
+      "block_order": [
+        "e0",
+        "e1",
+        "e2"
+      ]
+    },
+    "hh_split_6": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-living-room.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "hh-logo-club-cream.svg",
+        "heading": "HHaven Wellness & Social Club, built here in Nebraska.",
+        "text": "<p>I'm building a place where modern medicine and ancient practices meet. Providers who listen, a movement studio, a sauna, a café, and a greenhouse and farm. Somewhere you come because you want to be there.</p><p>Right now I'm looking for land. If you know someone with acreage, I'd love to hear from you.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Become a founding member",
+        "button_link": "/pages/the-club#membership",
+        "button_label_2": "Get in touch",
+        "button_link_2": "/pages/contact"
+      }
+    },
+    "featured_blog_7": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "From the Journal",
+        "heading_size": "h1",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_date": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "newsletter_8": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Haven Living, every Sunday.",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>What I'm learning about cacao, the next gathering, and the newest chapter of building the club. Your first block is 10% off when you join.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ]
+    }
+  },
+  "order": [
+    "hh_split_0",
+    "hh_trust_1",
+    "featured_collection_2",
+    "hh_grades_3",
+    "hh_split_4",
+    "hh_events_5",
+    "hh_split_6",
+    "featured_blog_7",
+    "newsletter_8"
+  ]
+}

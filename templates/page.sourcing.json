@@ -1,0 +1,149 @@
+{
+  "sections": {
+    "hh_split_0": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-stack-stumps.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Every block traces back to a family and a farm.",
+        "text": "<p>I buy from people I trust, in places I can name. Mostly women do this work, and they've done it the same way for generations.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "hh_split_1": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_left",
+        "fallback_image": "hh-photo-peru.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Valle de Lacco, Peru",
+        "text": "<p>High in the Cusco Valley. Add your partner's name, the farm, how long you've worked together, and one real detail from the farm.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Shop Peru",
+        "button_link": "/collections/all"
+      }
+    },
+    "hh_split_2": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-brazil.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Southern Bahia, Brazil",
+        "text": "<p>Grown under the Atlantic Forest canopy on Demeter-certified land. Add your partner's story here.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Shop Brazil",
+        "button_link": "/collections/all"
+      }
+    },
+    "hh_columns_3": {
+      "type": "hh-columns",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "From the tree to your cup",
+        "intro": "What ceremonial grade means to me, step by step.",
+        "numbered": false,
+        "columns": "3",
+        "statement": ""
+      },
+      "blocks": {
+        "c0": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Single origin",
+            "text": "It stays in the place it came from. It isn't hybridized or mass-farmed, and no pesticides are used."
+          }
+        },
+        "c1": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Made by hand",
+            "text": "Picked, fermented, sun-dried, roasted, de-shelled, and ground into paste. There's no factory."
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Cared for",
+            "text": "The people who grow it pray over it at each step. That care is part of why it's called ceremonial."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2"
+      ]
+    },
+    "hh_split_4": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "layout": "image_left",
+        "fallback_image": "hh-photo-shavings-jar.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "What I test, and what I don't claim",
+        "text": "<p>Cacao can carry trace heavy metals from the soil. I'll post lab results for each batch here so you can see them yourself.</p><p>HHaven cacao isn't USDA Organic certified, and I don't use a Fair Trade label. I'd rather tell you who grew it and how I buy it.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "newsletter_5": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Haven Living, every Sunday.",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>What I'm learning about cacao, the next gathering, and the newest chapter of building the club. Your first block is 10% off when you join.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ]
+    }
+  },
+  "order": [
+    "hh_split_0",
+    "hh_split_1",
+    "hh_split_2",
+    "hh_columns_3",
+    "hh_split_4",
+    "newsletter_5"
+  ]
+}

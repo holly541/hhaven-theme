@@ -1,0 +1,48 @@
+{%- comment -%} HHaven: numbered cards, used for the four grades of chocolate. {%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="hh-section hh-wrap">
+    {%- render 'hh-shead', heading: section.settings.heading, intro: section.settings.intro -%}
+    <div class="hh-cards">
+      {%- for block in section.blocks -%}
+        <div class="hh-card{% if block.settings.highlight %} hh-card--hl{% endif %}" {{ block.shopify_attributes }}>
+          <div class="hh-card__n">{{ block.settings.number }}</div>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.button_label != blank -%}
+      <div class="hh-btns"><a class="button button--secondary" href="{{ section.settings.button_link | default: '#' }}">{{ section.settings.button_label }}</a></div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "HHaven numbered cards",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 4,
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-5" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "There are four grades of chocolate. Most people only know one." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "The front of the bag rarely tells you which one you bought. Here they are, from most processed to least." },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "blocks": [
+    { "type": "card", "name": "Card", "settings": [
+      { "type": "text", "id": "number", "label": "Number", "default": "01" },
+      { "type": "text", "id": "title", "label": "Title", "default": "Cocoa powder" },
+      { "type": "textarea", "id": "text", "label": "Text", "default": "Baker's chocolate. The most processed, often with added sugar." },
+      { "type": "checkbox", "id": "highlight", "label": "Highlight this card", "default": false }
+    ] }
+  ],
+  "presets": [ { "name": "HHaven numbered cards", "blocks": [
+    { "type": "card", "settings": { "number": "01", "title": "Cocoa powder", "text": "Baker's chocolate. The most processed, often with added sugar." } },
+    { "type": "card", "settings": { "number": "02", "title": "Cacao powder and nibs", "text": "No additives, but still heavily manufactured." } },
+    { "type": "card", "settings": { "number": "03", "title": "Organic cacao", "text": "Grown without chemicals, but mass-produced and blended." } },
+    { "type": "card", "settings": { "number": "04", "title": "Ceremonial grade", "text": "Single origin, never hybridized, made by hand. The rawest form of chocolate.", "highlight": true } }
+  ] } ]
+}
+{% endschema %}

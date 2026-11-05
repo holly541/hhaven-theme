@@ -1,0 +1,205 @@
+{
+  "sections": {
+    "hh_events_0": {
+      "type": "hh-events",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "logo_mark": "hh-logo-events-cacao.svg",
+        "heading": "I'd love to have you in the room with us.",
+        "intro": "Cacao circles in yoga studios, conservatories, and event spaces around Omaha. You don't need to know anything ahead of time. Mats are provided, and there's a cup waiting for you.",
+        "show_image": true,
+        "fallback_image": "hh-photo-atrium.jpg"
+      },
+      "blocks": {
+        "e0": {
+          "type": "event",
+          "settings": {
+            "date": "Nov 22",
+            "day": "Sunday",
+            "title": "Late Fall Cacao Circle",
+            "details": "6:00 to 7:30 PM · [Studio name], Omaha · $35, cup included",
+            "member_note": "Included for members",
+            "button_label": "Save my spot",
+            "link": "/collections/gatherings"
+          }
+        },
+        "e1": {
+          "type": "event",
+          "settings": {
+            "date": "Dec 13",
+            "day": "Sunday",
+            "title": "Winter Gathering",
+            "details": "10:00 to 11:30 AM · [Event space], Omaha · $35",
+            "member_note": "Included for members",
+            "button_label": "Save my spot",
+            "link": "/collections/gatherings"
+          }
+        },
+        "e2": {
+          "type": "event",
+          "settings": {
+            "date": "Jan 10",
+            "day": "Sunday",
+            "title": "New Year Cacao Circle",
+            "details": "6:00 to 7:30 PM · [Event space], Lincoln · $35",
+            "member_note": "Included for members",
+            "button_label": "Save my spot",
+            "link": "/collections/gatherings"
+          }
+        }
+      },
+      "block_order": [
+        "e0",
+        "e1",
+        "e2"
+      ]
+    },
+    "hh_columns_1": {
+      "type": "hh-columns",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "heading": "What to expect",
+        "intro": "Your first time, start to finish.",
+        "numbered": true,
+        "columns": "4",
+        "statement": ""
+      },
+      "blocks": {
+        "c0": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "Arrive a few minutes early. Find a mat and settle in."
+          }
+        },
+        "c1": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "I'll share where tonight's cacao came from, and then we'll drink it together."
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "Quiet time with a guidance card and your journal, plus some gentle movement."
+          }
+        },
+        "c3": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "",
+            "text": "Time to talk with the people next to you, or to just sit."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ]
+    },
+    "hh_split_2": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-holly-eyes.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center 30%",
+        "logo_mark": "none",
+        "heading": "Why I hold circles",
+        "text": "<p>The first time I sat in a circle, at a women's retreat in Portugal, I didn't expect much. We drew cards, wrote in our journals, and listened to each other for an hour.</p><p>What the other women shared stayed with me. I heard my own questions in their stories, and I left feeling sure about the path I was on. I want people in Nebraska to have that same hour.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "hh_quote_3": {
+      "type": "hh-quote",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "quote": "\"It was simply sitting together, journaling, and listening to one another. The magic that comes from that community is life changing.\"",
+        "cite": "Holly",
+        "context": "On the women's circle in Portugal that started all of this."
+      }
+    },
+    "hh_split_4": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "image_left",
+        "fallback_image": "hh-photo-cups-blocks.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "What to bring",
+        "text": "<p>Comfortable clothes, a water bottle, and a journal if you have one. A blanket or pillow is nice. I'll bring the cacao, the mats, and the cups.</p><p>Each gathering runs about 90 minutes. Tickets are $35, cup included, and members come once a month at no charge.</p><p>If you're pregnant or nursing, have a heart condition, or take medications, please check with your provider before you come, and tell me when you arrive. I can serve you a lighter cup.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg"
+      }
+    },
+    "hh_split_5": {
+      "type": "hh-split",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "layout": "image_right",
+        "fallback_image": "hh-photo-kitchen-stove.jpg",
+        "image_alt": "",
+        "image_position": "object-position: center",
+        "logo_mark": "none",
+        "heading": "Host a private gathering",
+        "text": "<p>For birthdays, teams, studio classes, or a few friends in your living room. I bring the cacao and guide the gathering.</p>",
+        "show_signature": false,
+        "signature_mark": "hh-logo-arch-cacao.svg",
+        "button_label": "Ask about a date",
+        "button_link": "/pages/contact"
+      }
+    },
+    "newsletter_6": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Haven Living, every Sunday.",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>What I'm learning about cacao, the next gathering, and the newest chapter of building the club. Your first block is 10% off when you join.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ]
+    }
+  },
+  "order": [
+    "hh_events_0",
+    "hh_columns_1",
+    "hh_split_2",
+    "hh_quote_3",
+    "hh_split_4",
+    "hh_split_5",
+    "newsletter_6"
+  ]
+}

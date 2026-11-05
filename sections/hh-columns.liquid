@@ -1,0 +1,42 @@
+{%- comment -%} HHaven: columns with a top rule. Used for amounts, steps, values, and the club vision. {%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="hh-section hh-wrap">
+    {%- render 'hh-shead', heading: section.settings.heading, intro: section.settings.intro -%}
+    <div class="hh-cols{% if section.settings.columns == '4' %} hh-cols--4{% endif %}">
+      {%- for block in section.blocks -%}
+        <div class="hh-col" {{ block.shopify_attributes }}>
+          {%- if block.settings.big != blank -%}<span class="hh-col__big">{{ block.settings.big }}</span>{%- endif -%}
+          {%- if section.settings.numbered -%}<span class="hh-col__n">{{ forloop.index }}</span>{%- endif -%}
+          {%- if block.settings.title != blank -%}<h3>{{ block.settings.title }}</h3>{%- endif -%}
+          <p>{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.statement != blank -%}<p class="hh-statement">{{ section.settings.statement }}</p>{%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "HHaven columns",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find your amount" },
+    { "type": "textarea", "id": "intro", "label": "Intro" },
+    { "type": "select", "id": "columns", "label": "Columns on desktop", "default": "3",
+      "options": [ { "value": "3", "label": "3" }, { "value": "4", "label": "4" } ] },
+    { "type": "checkbox", "id": "numbered", "label": "Number the columns (for steps)", "default": false },
+    { "type": "textarea", "id": "statement", "label": "Closing statement", "info": "Large text under the columns." }
+  ],
+  "blocks": [
+    { "type": "column", "name": "Column", "settings": [
+      { "type": "text", "id": "big", "label": "Large figure", "info": "For example ½ oz. Leave blank for none." },
+      { "type": "text", "id": "title", "label": "Title", "default": "A daily cup" },
+      { "type": "textarea", "id": "text", "label": "Text", "default": "Where most people land." }
+    ] }
+  ],
+  "presets": [ { "name": "HHaven columns", "blocks": [ { "type": "column" }, { "type": "column" }, { "type": "column" } ] } ]
+}
+{% endschema %}
