@@ -1,0 +1,207 @@
+{
+  "sections": {
+    "hh_grades_0": {
+      "type": "hh-grades",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "compact": true,
+        "heading": "The four grades of chocolate",
+        "intro": "The front of the bag rarely tells you which one you bought. From most processed to least."
+      },
+      "blocks": {
+        "g0": {
+          "type": "card",
+          "settings": {
+            "number": "01",
+            "title": "Cocoa powder",
+            "text": "Most of the cacao butter pressed out\nOften treated with alkali to darken it\nSugar or milk often added",
+            "highlight": false
+          }
+        },
+        "g1": {
+          "type": "card",
+          "settings": {
+            "number": "02",
+            "title": "Cacao powder and nibs",
+            "text": "Nothing added\nPowder has most of the butter removed\nNibs are crushed whole beans",
+            "highlight": false
+          }
+        },
+        "g2": {
+          "type": "card",
+          "settings": {
+            "number": "03",
+            "title": "Organic cacao",
+            "text": "Grown without synthetic pesticides\nBlended from many farms\nMade in factories",
+            "highlight": false
+          }
+        },
+        "g3": {
+          "type": "card",
+          "settings": {
+            "number": "04",
+            "title": "Ceremonial grade",
+            "text": "Whole bean, butter left in\nOne origin, never hybridized\nFermented, dried, roasted, and ground by hand\nNothing added",
+            "highlight": true
+          }
+        }
+      },
+      "block_order": [
+        "g0",
+        "g1",
+        "g2",
+        "g3"
+      ]
+    },
+    "collapsible_content_1": {
+      "type": "collapsible-content",
+      "settings": {
+        "heading": "Good questions, plain answers.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true
+      },
+      "blocks": {
+        "q0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Isn't this just fancy hot chocolate?",
+            "icon": "none",
+            "row_content": "<p>No. Ceremonial grade cacao is single origin and made by hand, with nothing added. It tastes richer and a little bitter, and it's made to be sipped slowly.</p>"
+          }
+        },
+        "q1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can it replace my coffee?",
+            "icon": "none",
+            "row_content": "<p>It's not meant to. Cacao has theobromine and a little caffeine, and many people say it feels different from coffee. Most enjoy it as its own ritual.</p>"
+          }
+        },
+        "q2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much should I use?",
+            "icon": "none",
+            "row_content": "<p>Start with ½ oz. Most people settle around 1 oz for a daily cup. More isn't better.</p>"
+          }
+        },
+        "q3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is cacao safe for everyone?",
+            "icon": "none",
+            "row_content": "<p>Cacao is a food, but it has natural stimulants. If you're pregnant or nursing, have a heart condition, or take medications, please check with your own provider first.</p>"
+          }
+        },
+        "q4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "There's a white film on my block. Is it bad?",
+            "icon": "none",
+            "row_content": "<p>No. That's bloom, the cacao's own fat rising to the surface. It's still good.</p>"
+          }
+        },
+        "q5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How fast do you ship?",
+            "icon": "none",
+            "row_content": "<p>Orders ship from Omaha in 1 to 2 business days.</p>"
+          }
+        },
+        "q6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship in summer?",
+            "icon": "none",
+            "row_content": "<p>Yes. On hot weeks, orders go out in insulated packaging.</p>"
+          }
+        },
+        "q7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I return my cacao?",
+            "icon": "none",
+            "row_content": "<p>Opened blocks can't be returned because cacao is a food. If anything arrives damaged, email us and we'll make it right.</p>"
+          }
+        },
+        "q8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need experience to come to a gathering?",
+            "icon": "none",
+            "row_content": "<p>No. Most people at a gathering are trying cacao for the first time.</p>"
+          }
+        },
+        "q9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does membership include?",
+            "icon": "none",
+            "row_content": "<p>One gathering a month, a members-only gathering each season, 20% off extras, and first access to tickets and to the club when it opens.</p>"
+          }
+        },
+        "q10": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I cancel my membership?",
+            "icon": "none",
+            "row_content": "<p>Yes, online, anytime.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10"
+      ]
+    },
+    "newsletter_2": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Haven Living, every Sunday.",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>What I'm learning about cacao, the next gathering, and the newest chapter of building the club. Your first block is 10% off when you join.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ]
+    }
+  },
+  "order": [
+    "hh_grades_0",
+    "collapsible_content_1",
+    "newsletter_2"
+  ]
+}

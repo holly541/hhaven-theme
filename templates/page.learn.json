@@ -5,7 +5,7 @@
       "settings": {
         "color_scheme": "scheme-1",
         "layout": "image_right",
-        "fallback_image": "hh-photo-hand-dust.jpg",
+        "fallback_image": "hh-photo-marble-jar.jpg",
         "image_alt": "",
         "image_position": "object-position: center",
         "logo_mark": "none",
@@ -15,74 +15,76 @@
         "signature_mark": "hh-logo-arch-cacao.svg"
       }
     },
-    "hh_grades_1": {
-      "type": "hh-grades",
+    "hh_columns_1": {
+      "type": "hh-columns",
       "settings": {
-        "color_scheme": "scheme-5",
-        "heading": "There are four grades of chocolate. Most people only know one.",
-        "intro": "The front of the bag rarely tells you which one you bought. Here they are, from most processed to least."
+        "color_scheme": "scheme-1",
+        "heading": "What's in your cup",
+        "intro": "Ceremonial cacao is the whole bean ground into paste, so what the bean holds stays in. Here it is in plain words.",
+        "numbered": false,
+        "columns": "3",
+        "statement": ""
       },
       "blocks": {
-        "g0": {
-          "type": "card",
+        "c0": {
+          "type": "column",
           "settings": {
-            "number": "01",
-            "title": "Cocoa powder",
-            "text": "Baker's chocolate. The most processed, often with added sugar.",
-            "highlight": false
+            "big": "",
+            "title": "Minerals",
+            "text": "Cacao contains magnesium, iron, copper, manganese, zinc, and potassium, minerals your body uses every day."
           }
         },
-        "g1": {
-          "type": "card",
+        "c1": {
+          "type": "column",
           "settings": {
-            "number": "02",
-            "title": "Cacao powder and nibs",
-            "text": "No additives, but still heavily manufactured.",
-            "highlight": false
+            "big": "",
+            "title": "Theobromine",
+            "text": "Cacao's main natural compound. It's a gentle stimulant in the same family as caffeine, and your body clears it more slowly than caffeine."
           }
         },
-        "g2": {
-          "type": "card",
+        "c2": {
+          "type": "column",
           "settings": {
-            "number": "03",
-            "title": "Organic cacao",
-            "text": "Grown without chemicals, but mass-produced and blended.",
-            "highlight": false
+            "big": "",
+            "title": "A little caffeine",
+            "text": "Much less than a cup of coffee. The amount depends on the origin and how much you use."
           }
         },
-        "g3": {
-          "type": "card",
+        "c3": {
+          "type": "column",
           "settings": {
-            "number": "04",
-            "title": "Ceremonial grade",
-            "text": "Single origin, never hybridized, made by hand. The rawest form of chocolate.",
-            "highlight": true
+            "big": "",
+            "title": "Flavanols",
+            "text": "Plant compounds called polyphenols, also found in tea and berries. Less processing leaves more of them in the bean."
+          }
+        },
+        "c4": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Cacao butter and fiber",
+            "text": "The bean's natural fat stays in the paste, which gives your cup its body. Cacao has fiber too."
+          }
+        },
+        "c5": {
+          "type": "column",
+          "settings": {
+            "big": "",
+            "title": "Nothing added",
+            "text": "No sugar, milk, or fillers. Just the bean."
           }
         }
       },
       "block_order": [
-        "g0",
-        "g1",
-        "g2",
-        "g3"
+        "c0",
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
       ]
     },
-    "hh_split_2": {
-      "type": "hh-split",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "layout": "image_right",
-        "fallback_image": "hh-photo-marble-jar.jpg",
-        "image_alt": "",
-        "image_position": "object-position: center",
-        "logo_mark": "none",
-        "heading": "Theobromine, and a little caffeine.",
-        "text": "<p>Cacao's main natural compound is theobromine. It's a cousin of caffeine, from the same family of plant compounds. Cacao also has a small amount of caffeine, much less than a cup of coffee.</p><p>That's one reason people often say a cup of cacao feels different from coffee. I'd rather teach you what the compounds are than promise what they'll do. Everyone's body is a little different, which is why I always say start small.</p>",
-        "show_signature": false,
-        "signature_mark": "hh-logo-arch-cacao.svg"
-      }
-    },
-    "hh_columns_3": {
+    "hh_columns_2": {
       "type": "hh-columns",
       "settings": {
         "color_scheme": "scheme-2",
@@ -133,7 +135,7 @@
         "c3"
       ]
     },
-    "hh_columns_4": {
+    "hh_columns_3": {
       "type": "hh-columns",
       "settings": {
         "color_scheme": "scheme-1",
@@ -175,7 +177,7 @@
         "c2"
       ]
     },
-    "hh_split_5": {
+    "hh_split_4": {
       "type": "hh-split",
       "settings": {
         "color_scheme": "scheme-2",
@@ -190,7 +192,7 @@
         "signature_mark": "hh-logo-arch-cacao.svg"
       }
     },
-    "newsletter_6": {
+    "newsletter_5": {
       "type": "newsletter",
       "settings": {
         "color_scheme": "scheme-3",
@@ -224,11 +226,10 @@
   },
   "order": [
     "hh_split_0",
-    "hh_grades_1",
-    "hh_split_2",
+    "hh_columns_1",
+    "hh_columns_2",
     "hh_columns_3",
-    "hh_columns_4",
-    "hh_split_5",
-    "newsletter_6"
+    "hh_split_4",
+    "newsletter_5"
   ]
 }

@@ -1,0 +1,43 @@
+{%- comment -%} HHaven: the three divisions (Apothecary, Gatherings, The Club) side by side. {%- endcomment -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="hh-section hh-wrap">
+    {%- render 'hh-shead', heading: section.settings.heading, intro: section.settings.intro -%}
+    <div class="hh-divisions">
+      {%- for block in section.blocks -%}
+        <a class="hh-division" href="{{ block.settings.link | default: '#' }}" {{ block.shopify_attributes }}>
+          <div class="hh-division__media">
+            {%- render 'hh-image', image: block.settings.image, fallback: block.settings.fallback_image, alt: block.settings.title -%}
+          </div>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+          <span class="hh-division__link">{{ block.settings.link_label }}</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "HHaven three divisions",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 3,
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Three ways to be part of HHaven." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "Cacao for your own kitchen, gatherings around Omaha, and the club I'm building. Start wherever feels right." }
+  ],
+  "blocks": [
+    { "type": "division", "name": "Division", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Photo" },
+      { "type": "text", "id": "fallback_image", "label": "Bundled photo file", "info": "Leave blank to show a soft placeholder until you pick a photo." },
+      { "type": "text", "id": "title", "label": "Title", "default": "Apothecary" },
+      { "type": "textarea", "id": "text", "label": "Text" },
+      { "type": "text", "id": "link_label", "label": "Link label", "default": "Shop and learn" },
+      { "type": "url", "id": "link", "label": "Link" }
+    ] }
+  ],
+  "presets": [ { "name": "HHaven three divisions", "blocks": [ { "type": "division" }, { "type": "division" }, { "type": "division" } ] } ]
+}
+{% endschema %}

@@ -8,10 +8,10 @@ This theme is Shopify's free Dawn theme (version 16.1.1) with the HHaven brand a
 |---|---|
 | Colors | 5 color schemes from your brand sheet: Cream, Oat, Cacao, Moss, Mist |
 | Fonts | Bogart, Optima, Royale Victoria, shown with free stand-ins until web licenses are added |
-| Logos | All logo files, recolored. The Apothecary logo shows in the header until you upload one |
+| Logos | All logo files, recolored. The HHAVEN wordmark shows in the header until you upload one |
 | Photos | Your photos are bundled, so every page looks right on day one. Swap any of them in the editor |
-| Custom sections | Photo and text, Quote, Numbered cards, Columns, Trust strip, Gatherings, Membership, Story text |
-| Pages ready to go | Home, Our Story, The Club, Gatherings, Learn, Sourcing |
+| Custom sections | Photo and text, Three divisions, Quote, Numbered cards (with a compact bullet style), Columns, Trust strip, Gatherings, Membership, Story text |
+| Pages ready to go | Home, Our Story, The Club, Gatherings, Learn, Sourcing, FAQ |
 
 ## Step by step
 
@@ -30,6 +30,7 @@ Go to **Online Store > Pages** and add each page below. On the right, set **Them
 | Gatherings | gatherings | page.gatherings |
 | Learn | learn | page.learn |
 | Sourcing | sourcing | page.sourcing |
+| FAQ | faq | page.faq |
 | Contact | contact | page.contact |
 | Wholesale and Facilitators | wholesale | page |
 | Shipping, Returns, and Policies | policies | page |
@@ -43,8 +44,19 @@ The page body can stay empty for the designed pages. All the content lives in th
 - Paste the descriptions, prep steps, and storage notes from the mockup.
 
 ### 4. Menus
-**Online Store > Navigation > Main menu:** Shop, Learn, Sourcing, Gatherings, The Club, Our Story, Journal.
-**Footer menu:** FAQ, Contact, Wholesale, Policies.
+**Online Store > Navigation > Main menu.** Build it in this order. Drag the indented items under Apothecary so they become a dropdown. Dawn shows the dropdown on desktop and nests it in the mobile menu automatically.
+
+- Our Story
+- Apothecary (link to Shop all)
+  - Shop
+  - Learn about cacao
+  - Sourcing
+  - FAQ
+- Gatherings
+- The Club
+- Journal
+
+**Footer menu:** Contact, Wholesale and facilitators, Shipping and returns.
 
 ### 5. Journal
 Rename the default blog to **Journal** and post the bloom article first. The homepage shows your latest three posts.
@@ -64,7 +76,14 @@ On the Gatherings page and the homepage, each event is a block in the **HHaven g
 ### 9. Fonts (when licensed)
 Buy web licenses for Bogart, Optima, and Royale Victoria. Upload the `.woff2` files under **Edit code > Assets**. Then open `assets/hhaven.css` and follow the note at the top.
 
-### 10. Before you launch
+### 10. Stock photos for group scenes
+Guests in the gathering photos haven't given permission, so the theme ships with no group photos. License stock photos of a small group sharing cacao and add them in the editor:
+- Home page, **HHaven three divisions**, the Gatherings card
+- Home page and Gatherings page, **HHaven gatherings**, the wide photo
+
+Until then, the Gatherings card shows a soft placeholder and the wide photo is hidden.
+
+### 11. Before you launch
 - Board and legal sign-off on: the Learn page, the gathering safety note, the product "Before you try it" note, and the footer disclaimer.
 - Swap placeholder events and add real reviews.
 - Set up Shopify Payments, Shopify Tax, shipping rates, and policies.

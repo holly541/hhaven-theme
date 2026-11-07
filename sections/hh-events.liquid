@@ -5,7 +5,9 @@
       <img class="hh-logo-mark" src="{{ section.settings.logo_mark | asset_url }}" alt="HHaven Events" width="260" height="96" style="height:88px;width:auto;margin-bottom:2.8rem">
     {%- endif -%}
     {%- render 'hh-shead', heading: section.settings.heading, intro: section.settings.intro -%}
-    {%- if section.settings.show_image -%}
+    {%- assign hh_has_img = false -%}
+    {%- if section.settings.image != blank or section.settings.fallback_image != blank -%}{%- assign hh_has_img = true -%}{%- endif -%}
+    {%- if section.settings.show_image and hh_has_img -%}
       <div class="hh-wide-media">
         {%- render 'hh-image', image: section.settings.image, fallback: section.settings.fallback_image, alt: 'A cacao circle in a garden conservatory', position: 'object-position: center 65%' -%}
       </div>
@@ -41,7 +43,7 @@
     { "type": "textarea", "id": "intro", "label": "Intro", "default": "Cacao circles in yoga studios and event spaces around Omaha. Mats are provided, and your first cup is waiting for you." },
     { "type": "checkbox", "id": "show_image", "label": "Show wide photo", "default": true },
     { "type": "image_picker", "id": "image", "label": "Photo" },
-    { "type": "text", "id": "fallback_image", "label": "Bundled photo file", "default": "hh-photo-atrium.jpg" },
+    { "type": "text", "id": "fallback_image", "label": "Bundled photo file", "info": "Leave blank until you add a licensed stock photo above." },
     { "type": "text", "id": "button_label", "label": "Button under list" },
     { "type": "url", "id": "button_link", "label": "Button link" }
   ],

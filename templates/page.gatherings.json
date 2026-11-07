@@ -8,7 +8,7 @@
         "heading": "I'd love to have you in the room with us.",
         "intro": "Cacao circles in yoga studios, conservatories, and event spaces around Omaha. You don't need to know anything ahead of time. Mats are provided, and there's a cup waiting for you.",
         "show_image": true,
-        "fallback_image": "hh-photo-atrium.jpg"
+        "fallback_image": ""
       },
       "blocks": {
         "e0": {

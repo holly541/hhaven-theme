@@ -45,23 +45,58 @@
             "title": "Nothing added",
             "text": "100% cacao"
           }
-        },
-        "t3": {
-          "type": "point",
-          "settings": {
-            "title": "Lab tested",
-            "text": "Results posted per batch"
-          }
         }
       },
       "block_order": [
         "t0",
         "t1",
-        "t2",
-        "t3"
+        "t2"
       ]
     },
-    "featured_collection_2": {
+    "hh_divisions_2": {
+      "type": "hh-divisions",
+      "settings": {
+        "color_scheme": "scheme-1"
+      },
+      "blocks": {
+        "d0": {
+          "type": "division",
+          "settings": {
+            "fallback_image": "hh-photo-peru.jpg",
+            "title": "Apothecary",
+            "text": "Single-origin ceremonial cacao from Peru and Brazil, plus everything I can teach you about it.",
+            "link_label": "Shop and learn",
+            "link": "/collections/all"
+          }
+        },
+        "d1": {
+          "type": "division",
+          "settings": {
+            "fallback_image": "",
+            "title": "Gatherings",
+            "text": "Cacao circles in studios and event spaces around Omaha. Mats are provided, and there's a cup waiting for you.",
+            "link_label": "See upcoming gatherings",
+            "link": "/pages/gatherings"
+          }
+        },
+        "d2": {
+          "type": "division",
+          "settings": {
+            "fallback_image": "hh-photo-living-room.jpg",
+            "title": "The Club",
+            "text": "HHaven Wellness & Social Club, a place to gather that I'm building here in Nebraska.",
+            "link_label": "Become a founding member",
+            "link": "/pages/the-club"
+          }
+        }
+      },
+      "block_order": [
+        "d0",
+        "d1",
+        "d2"
+      ]
+    },
+    "featured_collection_3": {
       "type": "featured-collection",
       "settings": {
         "title": "Start with one block.",
@@ -74,60 +109,6 @@
         "image_ratio": "portrait",
         "show_view_all": true
       }
-    },
-    "hh_grades_3": {
-      "type": "hh-grades",
-      "settings": {
-        "color_scheme": "scheme-5",
-        "heading": "There are four grades of chocolate. Most people only know one.",
-        "intro": "The front of the bag rarely tells you which one you bought. Here they are, from most processed to least.",
-        "button_label": "Learn more about cacao",
-        "button_link": "/pages/learn"
-      },
-      "blocks": {
-        "g0": {
-          "type": "card",
-          "settings": {
-            "number": "01",
-            "title": "Cocoa powder",
-            "text": "Baker's chocolate. The most processed, often with added sugar.",
-            "highlight": false
-          }
-        },
-        "g1": {
-          "type": "card",
-          "settings": {
-            "number": "02",
-            "title": "Cacao powder and nibs",
-            "text": "No additives, but still heavily manufactured.",
-            "highlight": false
-          }
-        },
-        "g2": {
-          "type": "card",
-          "settings": {
-            "number": "03",
-            "title": "Organic cacao",
-            "text": "Grown without chemicals, but mass-produced and blended.",
-            "highlight": false
-          }
-        },
-        "g3": {
-          "type": "card",
-          "settings": {
-            "number": "04",
-            "title": "Ceremonial grade",
-            "text": "Single origin, never hybridized, made by hand. The rawest form of chocolate.",
-            "highlight": true
-          }
-        }
-      },
-      "block_order": [
-        "g0",
-        "g1",
-        "g2",
-        "g3"
-      ]
     },
     "hh_split_4": {
       "type": "hh-split",
@@ -154,7 +135,7 @@
         "heading": "I'd love to have you in the room with us.",
         "intro": "Cacao circles in yoga studios and event spaces around Omaha. Mats are provided, and your first cup is waiting for you.",
         "show_image": true,
-        "fallback_image": "hh-photo-atrium.jpg",
+        "fallback_image": "",
         "button_label": "All gatherings",
         "button_link": "/pages/gatherings"
       },
@@ -267,8 +248,8 @@
   "order": [
     "hh_split_0",
     "hh_trust_1",
-    "featured_collection_2",
-    "hh_grades_3",
+    "hh_divisions_2",
+    "featured_collection_3",
     "hh_split_4",
     "hh_events_5",
     "hh_split_6",

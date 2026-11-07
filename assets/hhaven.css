@@ -20,7 +20,7 @@
 }
 body{font-family:var(--hh-body);letter-spacing:0;font-size:1.7rem}
 h1,h2,h3,h4,.h0,.h1,.h2,.h3,.h4{font-family:var(--hh-display);font-weight:300;letter-spacing:-.01em;text-wrap:balance}
-.hh-header-logo{height:48px;width:auto;display:block}
+.hh-header-logo{height:30px;width:auto;display:block}
 
 /* Dawn uses small caps in a few places; HHaven doesn't */
 .caption-with-letter-spacing,.subtitle,.product__text.caption-with-letter-spacing{text-transform:none;letter-spacing:0;font-size:1.4rem}
@@ -101,7 +101,24 @@ h1,h2,h3,h4,.h0,.h1,.h2,.h3,.h4{font-family:var(--hh-display);font-weight:300;le
 .hh-fine{font-size:1.45rem;opacity:.85;margin-top:2.8rem;max-width:80ch}
 .hh-success{background:var(--hh-oat);padding:1.6rem 2rem;border-radius:6px}
 
+/* three divisions */
+.hh-divisions{display:grid;grid-template-columns:repeat(3,1fr);gap:2.8rem}
+.hh-division{display:flex;flex-direction:column;gap:1.4rem;text-decoration:none;color:inherit}
+.hh-division__media{aspect-ratio:4/4.8;border-radius:6px;overflow:hidden;background:repeating-linear-gradient(45deg,var(--hh-oat),var(--hh-oat) 22px,rgba(225,207,192,.8) 22px,rgba(225,207,192,.8) 44px)}
+.hh-division__media img{width:100%;height:100%;object-fit:cover;display:block}
+.hh-division h3{font-size:2.8rem;margin:0}
+.hh-division p{margin:0;opacity:.88}
+.hh-division__link{border-bottom:1px solid currentColor;align-self:flex-start;margin-top:auto}
+/* compact numbered cards with bullet lists */
+.hh-cards--compact{gap:1.2rem}
+.hh-cards--compact .hh-card{padding:1.8rem}
+.hh-cards--compact .hh-card__n{font-size:3.2rem}
+.hh-cards--compact .hh-card h3{font-size:1.8rem}
+.hh-card ul{margin:0;padding-left:1.6rem;display:grid;gap:.4rem;font-size:1.4rem}
+.hh-card--hl ul{color:var(--hh-cream)}
+
 @media screen and (max-width:989px){
+  .hh-divisions{grid-template-columns:1fr}
   .hh-shead,.hh-split,.hh-mem{grid-template-columns:1fr;gap:2.8rem}
   .hh-split--reverse>.hh-split__media{order:0}
   .hh-split__media,.hh-split__media img{min-height:340px}
